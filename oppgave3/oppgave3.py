@@ -257,10 +257,4 @@ print("\tDendrogrammet med complete style linkage ser best ut av alternativene, 
 # 3d.1 Hvis vi skulle brukt en metode for å predikere/klassifisere hvilket siffer et håndskrevet tall er, og ikke bare samle dem i klynge, hva ville du brukt?
 print("Oppgave 3d.1 Hvis vi skulle brukt en metode for å predikere/klassifisere hvilket siffer et håndskrevet tall er, og ikke bare samle dem i klynge, hva ville du brukt?")
 
-print("\tFor å predikere hvilket siffer det er, ville jeg ha satt opp en klynge analyse med K = 3, og sammenlignet input bildet med sentroidene til klyngene. Så ville jeg ha valgt den klyngen som bildet er nærmest til som prediksjon for hvilket siffer det er.")
-
-# Sett opp en klynge analyse med K = 3 slik som i oppgave 3b.1
-kmeans = KMeans(n_clusters = 3, random_state = 1, n_init = 10)
-kmeans.fit(images)
-sentroider = kmeans.cluster_centers_
-
+print("\tFor å predikere hvilket siffer det er, er det best å bruke en k-nermeste nabo algoritme kontra logistisk regresjon. Dette er fordi k-nermeste nabo algoritmen er enkel og intuitiv, og passer godt til datasettet pga den store andelen forklaringsvariabler (784 pikseler). Algoritmen er kanskje ikke den mest effektive med såpass mange forklaringsvariabler, men er bedre til å tilpasse seg komplekse datasett enn logistisk regresjon, som i større grad baserer seg på en lineær sammenheng innad i klassene. Med tanke på at CPU-kraft ikke er mangelvare i 2024 er det naturlige valget å bruke k-nermeste nabo algoritmen.")
