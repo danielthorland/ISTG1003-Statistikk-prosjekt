@@ -7,7 +7,7 @@ from scipy import stats
 import statsmodels.formula.api as smf
 import statsmodels.api as sm
 
-df = pd.read_csv(r'/Oppgave1/UrensetData.csv', sep=",", encoding="latin1")
+df = pd.read_csv(r'/prosjekt/Oppgave1/UrensetData.csv', sep=",", encoding="latin1")
 
 
 # fjerner forklaringsvariabler vi ikke trenger
