@@ -26,5 +26,5 @@ df2['Price'] = df2['Price'].str.replace('\$', '', regex = True)
 # og gjør så prisen om til float
 df2['Price'] = df2['Price'].astype(float)
 
-df2.to_csv('C:\\Users\\sondr\\gits\\ntnu\\ISTG1003-Statistikk-prosjekt\\Oppgave1\\df2.csv', index=False)
+df2.to_csv(r'/Oppgave1/df2.csv', index=False)
 
