@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r'C:\Users\sondr\gits\ntnu\ISTG1003-Statistikk-prosjekt\prosjekt\Oppgave1\RensetData.csv', sep=",", encoding="latin1")
+df = pd.read_csv(r'RensetData.csv', sep=",", encoding="latin1")
 
 # Calculate the Repetisjonsfaktor
 df['Repetisjonsfaktor'] = df['Unique_Pieces'] / df['Pieces']
