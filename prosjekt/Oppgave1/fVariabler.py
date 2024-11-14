@@ -13,18 +13,9 @@ data['Ratio_Pages_Pieces'] = data['Pages'] / data['Pieces']
 # 2. Histogram av forholdet mellom sider og brikker
 plt.figure(figsize=(10, 5))
 plt.hist(data['Ratio_Pages_Pieces'], bins=20, color='skyblue', edgecolor='black')
-plt.title('Histogram: Fordeling av forholdet mellom sider og brikker')
+plt.title('Forklaringsvariabel 2: Byggets kompleksitet')
 plt.xlabel('Forholdet mellom sider og brikker')
 plt.ylabel('Antall LEGO-sett')
+plt.savefig("fVariabel_2.pdf", format="pdf")
 plt.show()
 
-# Sorterte verdier for forholdet mellom sider og brikker
-sorted_ratio = data['Ratio_Pages_Pieces'].sort_values()
-
-# Linjeplott med y-aksen som starter fra 0
-plt.figure(figsize=(10, 5))
-plt.plot(sorted_ratio.values, range(len(sorted_ratio)), marker='o', linestyle='-', markersize=3, color='purple')
-plt.title('Linjeplott: Forhold mellom sider og brikker (Y-aksen starter fra 0)')
-plt.xlabel('Forholdet mellom sider og brikker')
-plt.ylabel('Indeks (sortert)')
-plt.show()
