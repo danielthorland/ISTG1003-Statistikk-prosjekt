@@ -16,6 +16,6 @@ plt.hist(data['Ratio_Pages_Pieces'], bins=20, color='skyblue', edgecolor='black'
 plt.title('Forklaringsvariabel 2: Byggets kompleksitet')
 plt.xlabel('Forholdet mellom sider og brikker')
 plt.ylabel('Antall LEGO-sett')
-plt.savefig("fVariabel_2.pdf", format="pdf")
+#plt.savefig("fVariabel_2.pdf", format="pdf")
 plt.show()
 

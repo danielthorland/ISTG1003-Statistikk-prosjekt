@@ -14,6 +14,6 @@ plt.title('Forklaringsvariabel 1: Repetisjonsfaktor')
 plt.ylabel('Antall LEGO-sett')
 plt.xlabel('Repetisjonsfaktor')
 plt.grid(axis='x', linestyle='--', alpha=0.5)
-plt.savefig("Repetisjonsfaktor.pdf", format="pdf")
+#plt.savefig("Repetisjonsfaktor.pdf", format="pdf")
 plt.show()
 
