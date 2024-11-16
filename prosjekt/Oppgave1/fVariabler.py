@@ -4,7 +4,7 @@ import seaborn as sns
 
 
 # Last inn datasettet (juster filstien hvis nødvendig)
-file_path = 'RensetData.csv'  # Skriv inn riktig filsti
+file_path = 'RensetData.csv'
 data = pd.read_csv(file_path)
 
 # Beregn forholdet mellom antall sider og totalt antall brikker

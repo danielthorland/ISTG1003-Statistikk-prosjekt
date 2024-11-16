@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 # Last inn datasettet (juster filstien hvis nødvendig)
-file_path = 'RensetData.csv'  # Skriv inn riktig filsti
+file_path = 'RensetData.csv'
 data = pd.read_csv(file_path)
 
 # Beregn repetisjonsfaktor (Ratio_Unique_Pieces)
